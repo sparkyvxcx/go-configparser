@@ -16,7 +16,8 @@ const (
 )
 
 var (
-	sectionHeader    = regexp.MustCompile("\\[([^]]+)\\]")
+	// sectionHeader    = regexp.MustCompile("\\[([^]]+)\\]")
+	sectionHeader    = regexp.MustCompile("\\[([\\D]+)\\]")
 	keyValue         = regexp.MustCompile("([^:=\\s][^:=]*)\\s*(?P<vi>[:=])\\s*(.*)$")
 	continuationLine = regexp.MustCompile("\\w+(.*)$")
 	interpolater     = regexp.MustCompile("%\\(([^)]*)\\)s")
