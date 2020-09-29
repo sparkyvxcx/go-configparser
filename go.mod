@@ -1,4 +1,4 @@
-module github.com/bigkevmcd/go-configparser
+module github.com/sparkyvxcx/go-configparser
 
 go 1.12
 
